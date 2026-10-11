@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Yufei Li <yufeiminds@gmail.com>, 2026
+# evildmp <daniele@vurt.org>, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-04 23:10+0100\n"
 "PO-Revision-Date: 2026-07-06 20:18+0000\n"
-"Last-Translator: Yufei Li <yufeiminds@gmail.com>, 2026\n"
+"Last-Translator: evildmp <daniele@vurt.org>, 2026\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/danieleprocida/teams/120528/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -277,7 +278,7 @@ msgid ""
 "gets in, or the clothing falls apart - it lacks quality."
 msgstr ""
 "不妨想一想我们如何评判一件衣物的质量。衣服要有 "
-"*功能性质量*（必须能提供适当的保暖与防潮，且耐穿耐磨）。这些方面是可以客观衡量的。这些都是可以客观衡量的，并不需要多少专业知识就能判断它们是否达标。若有雨水渗入，或布料破裂——那便是质量不合格。"
+"*功能性质量*\\（必须能提供适当的保暖与防潮，且耐穿耐磨）。这些方面是可以客观衡量的。这些都是可以客观衡量的，并不需要多少专业知识就能判断它们是否达标。若有雨水渗入，或布料破裂——那便是质量不合格。"
 
 #: ../../source/quality.rst:141
 msgid ""
