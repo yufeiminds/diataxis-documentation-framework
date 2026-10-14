@@ -5,3 +5,10 @@ __pycache__
 .idea/
 stashed/
 translation/*/LC_MESSAGES/*.mo
+
+.agents/
+IMPROVEMENT_PLAN.md
+clankers.md
+node_modules/
+package-lock.json
+package.json

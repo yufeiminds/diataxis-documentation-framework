@@ -52,9 +52,10 @@ html_context = {
         ["zh_CN", "简体中文"],
         ["ko", "한국어"],
         ["es", "Español"],
-        # ["de", "Deutsche"],
+        ["de", "Deutsche"],
         ["ja", "日本語"],
         ["ru", "Русский"],
+        ["uk", "Українська"],
     ],
     "default_language": "en",
 }

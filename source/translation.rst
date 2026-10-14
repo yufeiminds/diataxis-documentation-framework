@@ -3,16 +3,13 @@ Help translate Diátaxis
 
 If you'd like to help translate Diátaxis into your language, that would be very welcome.
 
-Currently, the only other language available is Polish.
-
-Translation is in progress for various other languages, including French, Italian, Portuguese (Brazil), Chinese (Simplified), Korean and Japanese. Others can be added on request and will be published there when more translations are added.
+..  include:: /snippets/translation-status.rst
 
 As soon as a translation is complete, I will publish it on https://diataxis.fr.
 
 
 Translation guide
 -----------------
-
 
 The best way to contribute to translation is via `Transifex <https://transifex.com>`_, where you'll need an account.
 

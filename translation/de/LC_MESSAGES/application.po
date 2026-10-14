@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Diátaxis package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# David Stoewe, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Diátaxis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-01 12:29+0200\n"
+"POT-Creation-Date: 2026-09-04 23:10+0100\n"
 "PO-Revision-Date: 2026-07-06 20:18+0000\n"
+"Last-Translator: David Stoewe, 2026\n"
 "Language-Team: German (https://app.transifex.com/danieleprocida/teams/120528/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,11 +80,11 @@ msgstr ""
 
 #: ../../source/application.rst:26
 msgid ":doc:`reference` - information-oriented technical description"
-msgstr ""
+msgstr ":doc:`reference` - informationsorientierte technische Beschreibung"
 
 #: ../../source/application.rst:27
 msgid ":doc:`explanation` - understanding-oriented discussion"
-msgstr ""
+msgstr ":doc:`explanation` - verständnisorientierte Diskussion"
 
 #: ../../source/application.rst:29
 msgid ""
@@ -92,8 +96,8 @@ msgstr ""
 
 #: ../../source/application.rst:31
 msgid ":doc:`compass` - a simple tool for direction-finding"
-msgstr ""
+msgstr ":doc:`compass` - ein einfaches Werkzeug zur Orientierung"
 
 #: ../../source/application.rst:32
 msgid ":doc:`Workflow <how-to-use-diataxis>` in Diátaxis"
-msgstr ""
+msgstr ":doc:`Workflow <how-to-use-diataxis>` in Diátaxis"

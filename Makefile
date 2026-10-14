@@ -9,7 +9,7 @@ GETTEXTDIR    = $(BUILDDIR)/gettext
 SPELLINGDIR   = $(BUILDDIR)/spelling
 
 TRANSLATIONSDIR = translation
-TRANSLATIONLANGUAGES = fr it pt_BR zh_CN pl ja ko es ru
+TRANSLATIONLANGUAGES = fr it pt_BR zh_CN pl ja ko es ru uk de
 
 VENV = env/bin/activate
 PORT = 8090
@@ -70,7 +70,13 @@ html-es:
 html-ru:
 	. $(VENV); $(SPHINXBUILD) -b dirhtml -D language=ru $(SOURCEDIR) $(HTMLDIR)/ru
 
-html-all: html html-fr html-it html-pt_BR html-pl html-ja html-zh_CN html-ko html-es html-ru
+html-uk:
+	. $(VENV); $(SPHINXBUILD) -b dirhtml -D language=ru $(SOURCEDIR) $(HTMLDIR)/uk
+
+html-de:
+	. $(VENV); $(SPHINXBUILD) -b dirhtml -D language=ru $(SOURCEDIR) $(HTMLDIR)/de
+
+html-all: html html-fr html-it html-pt_BR html-pl html-ja html-zh_CN html-ko html-es html-ru html-uk html-de
 
 run-all: html-all run
 
@@ -80,6 +86,9 @@ gettext:
 update-po-files:
 	. $(VENV); sphinx-intl update -p $(GETTEXTDIR) -d $(TRANSLATIONSDIR) $(foreach lang,$(TRANSLATIONLANGUAGES),-l $(lang))
 
+translation-report:
+	. $(VENV); python3 translation-report.py
+
 spelling:
 	. $(VENV); $(SPHINXBUILD) -b spelling $(ALLSPHINXOPTS) $(SOURCEDIR) $(SPELLINGDIR)
 	@echo
@@ -87,7 +96,7 @@ spelling:
 		"$(SPELLINGDIR)/output.txt."
 
 
-.PHONY: help install clean run html html-fr html-it html-pt_BR html-pl html-ja html-zh_CN html-ko html-es html-ru html-all run-all gettext update-po-files spelling quickstart Makefile
+.PHONY: help install clean run html html-fr html-it html-pt_BR html-pl html-ja html-zh_CN html-ko html-es html-ru html-uk html-de html-all run-all gettext update-po-files translation-report spelling quickstart Makefile
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).

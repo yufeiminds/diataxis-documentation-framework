@@ -77,7 +77,7 @@ msgstr ""
 msgid ""
 "For the user, explanation joins things together. It's an answer to the "
 "question: *Can you tell me about ...?*"
-msgstr "对用户而言，解释将各方面串联起来。它回答的是这样的问题：*能给我讲讲 …… 吗？*"
+msgstr "对用户而言，解释把事物串联起来。它回答的是这样的问题：*能给我讲讲 …… 吗？*"
 
 #: ../../source/explanation.rst:30
 msgid ""
@@ -104,12 +104,12 @@ msgid ""
 "can afford to be without an understanding of that craft, and needs the "
 "explanatory material that will help weave it together."
 msgstr ""
-"解释的特点在于它与实践者当下的关切保持距离。它对实践者所做的事或工作没有直接影响，因此，它有时被视为没那么重要，这显然是一种误解；它或许不如其他三者 "
-"*紧迫*，但 *重要性* 则毫不逊色。它并非奢侈品，无论哪位手艺人都不能缺少对技艺的理解，都需要解释性的材料来帮助自己融会贯通。"
+"解释的特点在于它与实践者当下的关切保持距离，对实践者所做的事或工作没有直接影响，因此有时被视为没那么重要，而这显然是一种误解；它或许不如其他三者 "
+"*紧迫*，但 *重要性* 则毫不逊色。解释并非奢侈品，任何一门技艺的实践者，都不能没有对这门技艺的理解，也都需要解释性材料来帮自己把它编织成形。"
 
 #: ../../source/explanation.rst:43
 msgid "Explanation by any other name"
-msgstr ""
+msgstr "解释的其他称谓"
 
 #: ../../source/explanation.rst:45
 msgid ""
@@ -138,7 +138,7 @@ msgid ""
 "The word *explanation* - and its cognates in other languages - refer to "
 "*unfolding*, the revelation of what is hidden in the folds. So explanation "
 "brings to the light things that were implicit or obscured."
-msgstr "*解释* 一词，以及它在其它语言中的同源词，均指 *展开*，即揭示隐藏在褶皱中的事物。因此，解释将原本隐晦或模糊之处昭示于众。"
+msgstr "*解释* 一词，以及它在其它语言中的同源词，均指 *展开*，即揭示隐藏在褶皱中的事物。因此，解释把原本隐含或被遮蔽的东西，带到光亮之下。"
 
 #: ../../source/explanation.rst:54
 msgid ""
@@ -158,7 +158,8 @@ msgid ""
 "practitioner's knowledge of their craft is loose and fragmented and fragile,"
 " and their exercise of it is *anxious*."
 msgstr ""
-"理解并非 *源于* 解释，但解释对于编织那张将一切紧密联结的网则不可或缺。没有它，实践者对其技艺的认知便松散零碎、脆弱不堪，运用之时也会 *提心吊胆*。"
+"理解并非 *源于* 解释，但对于编织那张将一切紧密联结的网，解释则不可或缺。没有它，实践者对其技艺的认知便松散零碎、脆弱不堪，运用之时也会 "
+"*惴惴不安*。"
 
 #: ../../source/explanation.rst:62
 msgid "Explanation and its boundaries"
@@ -186,7 +187,7 @@ msgid ""
 "scope by something that is also well-defined: by what you need the user to "
 "learn, what task the user needs to achieve, or just by the scope of the "
 "machine itself."
-msgstr "教程、操作指南和参考文档，其范围均由某个同样明确的事物所清晰界定：即用户需要学习的内容、用户需要完成的任务，或是机器本身的范畴。"
+msgstr "教程、操作指南和参考，其范围均由某个同样明确的事物所清晰界定：即用户需要学习的内容、用户需要完成的任务，或者就是系统本身的范畴。"
 
 #: ../../source/explanation.rst:74
 msgid ""
@@ -195,7 +196,7 @@ msgid ""
 " that mark out a reasonable area and be satisfied with that."
 msgstr ""
 "就解释而言，用一个 *为什么* "
-"的问题作为切入点，将大有裨益，无论这个问题源于真实还是设想。否则，你只能自行划定界限，圈出一个合理的范围，固步自封，画地为牢。"
+"的问题作为切入点，将大有裨益，无论这个问题源于真实还是设想。否则，你就只能自己动手划几条线，圈出一个合理的范围，然后安于此界。"
 
 #: ../../source/explanation.rst:82
 msgid "Writing good explanation"
@@ -203,14 +204,14 @@ msgstr "编写优秀的解释"
 
 #: ../../source/explanation.rst:85
 msgid "Make connections"
-msgstr "建立连接"
+msgstr "建立联系"
 
 #: ../../source/explanation.rst:87
 msgid ""
 "When writing explanation you are helping to weave a web of understanding for"
 " your readers. **Make connections** to other things, even to things outside "
 "the immediate topic, if that helps."
-msgstr "撰写解释的时候，你是在帮助读者编织一张理解之网。去 **建立连接**，与其他事物相联系，乃至于延伸至当前主题之外，只要它有所裨益。"
+msgstr "当撰写解释之时，你其实是在帮助读者编织一张理解之网。去 **建立联系**，与其他事物相连结，甚至延伸到当下主题之外，只要它能有所裨益。"
 
 #: ../../source/explanation.rst:92
 msgid "Provide context"
@@ -225,11 +226,11 @@ msgstr "**在解释中提供背景与上下文**：解释事物为何如此，�
 
 #: ../../source/explanation.rst:99
 msgid "Talk *about* the subject"
-msgstr "*关于* 这个主题本身的讨论"
+msgstr "*围绕* 这个主题的讨论"
 
 #: ../../source/explanation.rst:101
 msgid "Things to discuss"
-msgstr ""
+msgstr "可以讨论的内容"
 
 #: ../../source/explanation.rst:103
 msgid "the bigger picture"
@@ -255,9 +256,9 @@ msgid ""
 "each title. For example: *About user authentication*, or *About database "
 "connection policies*."
 msgstr ""
-"解释指南是 *关于* 某个主题的，也就是说，它们是围绕该主题 *展开* "
-"的。解释指南的名称也应体现这一点；你应该能在每个标题前加上一个隐含的（甚至明确的）*关于*。例如：*《关于用户认证》* 或 *《关于数据库连接策略》* "
-"。"
+"解释类文档是 *关于* 某个主题的，也就是说，它们围绕该主题 "
+"*展开*。解释指南的名称也应体现这一点；你应该能在每个标题前加上一个隐含的（甚至明确的）*关于*。例如：*《关于用户认证》* 或 "
+"*《关于数据库连接策略》*。"
 
 #: ../../source/explanation.rst:114
 msgid "Admit opinion and perspective"
@@ -309,7 +310,7 @@ msgstr "解释的语言"
 
 #: ../../source/explanation.rst:134
 msgid "*The reason for x is because historically, y ...*"
-msgstr "*x 之所以如此，在于历史原因，那时 y ……*"
+msgstr "*x 之所以如此，要追溯到历史：那时 y ……*"
 
 #: ../../source/explanation.rst:135
 msgid "Explain."
@@ -351,7 +352,7 @@ msgstr "揭示系统内部的奥秘，有助于理解其行为背后的原因。
 
 #: ../../source/explanation.rst:148
 msgid "Analogy from food and cooking"
-msgstr "以食品与烹饪类比"
+msgstr "以食物与烹饪类比"
 
 #: ../../source/explanation.rst:151
 msgid ""
@@ -367,7 +368,7 @@ msgid ""
 "technology. It explains for example why we do what we do in the kitchen and "
 "how that has changed."
 msgstr ""
-"该书并不教人烹饪任何菜肴，也不含食谱（仅作为历史示例出现），更非参考手册。相反，它将食物与烹饪置于历史、社会、科学和技术的背景之中。例如，它解释了我们在厨房中的种种做法为何如此，以及这些做法如何演变。"
+"该书并不教人烹饪任何菜肴，也不含菜谱（仅作为历史示例出现），更非参考手册。相反，它将食物与烹饪置于历史、社会、科学和技术的背景之中。例如，它解释了我们在厨房中的种种做法为何如此，以及这些做法如何演变。"
 
 #: ../../source/explanation.rst:159
 msgid ""
@@ -375,7 +376,7 @@ msgid ""
 " want to reflect on cooking. It illuminates the subject by taking multiple "
 "different perspectives on it, shining light from different angles."
 msgstr ""
-"这显然不是一本在 *烹饪时* 阅读的书，而更适合在想要反思烹饪本身时阅读它。它通过从多个不同视角审视这一主题，从不同角度照亮它，使其更加透彻清晰。"
+"这显然不是一本在 *烹饪时* 阅读的书，而更适合在想要反思烹饪本身时阅读它。它通过从多个不同视角切入这一主题，从不同角度照亮它，使其更加透彻清晰。"
 
 #: ../../source/explanation.rst:161
 msgid ""

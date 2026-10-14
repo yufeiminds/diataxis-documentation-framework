@@ -67,10 +67,14 @@ msgid ""
 "your work, try applying it. Come back here when you need more clarity or "
 "reassurance. Iterate between your work and reflecting on your work."
 msgstr ""
+"Appena ti sembra di aver colto un'idea che sembra applicabile al tuo lavoro,"
+" prova ad implementarla. Ritorna qua quanto hai bisogno di fare chiarezza o "
+"rassicurare. Continua ad iterare tra il tuo lavoro e riflettere su ciò che "
+"hai fatto."
 
 #: ../../source/application.rst:20
 msgid "In this section"
-msgstr ""
+msgstr "In questa sezione"
 
 #: ../../source/application.rst:22
 msgid ""
@@ -78,22 +82,25 @@ msgid ""
 "identifies. If you're encountering Diátaxis for the first time, start with "
 "these pages."
 msgstr ""
+"Al centro di Diátaxis ci sono i quattro tipi di documentazione che "
+"identifica. Se hai scoperto Diátaxis per la prima volta, inizia con queste "
+"pagine."
 
 #: ../../source/application.rst:24
 msgid ":doc:`tutorials` - learning-oriented experiences"
-msgstr ""
+msgstr ":doc:`tutorial` - esperienze orientate all'apprendimento"
 
 #: ../../source/application.rst:25
 msgid ":doc:`how-to-guides` - goal-oriented directions"
-msgstr ""
+msgstr ":doc:`how-to-guides` - direzzioni orientate a risutati"
 
 #: ../../source/application.rst:26
 msgid ":doc:`reference` - information-oriented technical description"
-msgstr ""
+msgstr ":doc:`riferimento` - descrizioni tecniche orientate all'informazione"
 
 #: ../../source/application.rst:27
 msgid ":doc:`explanation` - understanding-oriented discussion"
-msgstr ""
+msgstr ":doc:`spiegazione` - discussioni orientate alla comprensione"
 
 #: ../../source/application.rst:29
 msgid ""
@@ -102,11 +109,15 @@ msgid ""
 "execution. Once you've made your first start, the tools and methods outlined"
 " here will help smooth your way."
 msgstr ""
+"Diátaxis prescrive principi che guidano azioni. Questi si traducono in modi "
+"particolari di lavorare, con implicazioni per processi di documentazione ed "
+"esecuzione. Una volta che inizi, gli strumenti e metodi sottostanti "
+"aiuteranno a pulire la via."
 
 #: ../../source/application.rst:31
 msgid ":doc:`compass` - a simple tool for direction-finding"
-msgstr ""
+msgstr ":doc:`bussola` - un semplice strumento per trovare direzioni"
 
 #: ../../source/application.rst:32
 msgid ":doc:`Workflow <how-to-use-diataxis>` in Diátaxis"
-msgstr ""
+msgstr ":doc:`Flusso di lavoro <how-to-use-diataxis>` di Diátaxis"

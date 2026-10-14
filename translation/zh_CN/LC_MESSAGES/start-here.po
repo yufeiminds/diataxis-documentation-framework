@@ -5,8 +5,8 @@
 # 
 # Translators:
 # yms, 2026
-# Yufei Li <yufeiminds@gmail.com>, 2026
 # evildmp <daniele@vurt.org>, 2026
+# Yufei Li <yufeiminds@gmail.com>, 2026
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-04 23:10+0100\n"
 "PO-Revision-Date: 2026-07-06 20:18+0000\n"
-"Last-Translator: evildmp <daniele@vurt.org>, 2026\n"
+"Last-Translator: Yufei Li <yufeiminds@gmail.com>, 2026\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/danieleprocida/teams/120528/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -215,7 +215,7 @@ msgid ""
 "to understand and put things in a bigger picture. Explanation joins things "
 "together, and helps answer the question *why?*"
 msgstr ""
-"**解释性指南提供上下文与背景**，它满足的是理解的需要 —— 把事物放进更大的图景中看清全貌。解释将事物串联起来，帮助回答 *为什么？* 。"
+"**解释性指南提供上下文与背景**，它满足的是理解的需要 —— 把事物放进更广阔的图景中看清全貌。解释将事物串联起来，帮助回答 *为什么？* 。"
 
 #: ../../source/start-here.rst:83
 msgid ""
@@ -391,15 +391,15 @@ msgstr "与地图相比，指南针远没有那么引人注目。然而，当你
 
 #: ../../source/snippets/compass.rst:7
 msgid "If the content..."
-msgstr "如果这个内容 ……"
+msgstr "如果这个内容……"
 
 #: ../../source/snippets/compass.rst:8
 msgid "...and serves the user's..."
-msgstr "…… 并服务于用户 ……"
+msgstr "……并服务于用户的……"
 
 #: ../../source/snippets/compass.rst:9
 msgid "...then it must belong to..."
-msgstr "那么它一定属于 ……"
+msgstr "那么它一定属于……"
 
 #: ../../source/snippets/compass.rst:10 ../../source/snippets/compass.rst:13
 msgid "directs action"

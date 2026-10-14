@@ -62,7 +62,7 @@ msgstr ""
 msgid ""
 "Otherwise, it will be just another useful heuristic approach, and the "
 "strongest claim we can make for it is that \"it seems to work quite well\"."
-msgstr "否则，它便不过是另一种可资借鉴的方法，我们最多只能称其为“看起来行之有效”。"
+msgstr "否则，它便不过是又一种有用的启发式方法，我们最多只能说它“看起来行之有效”。"
 
 #: ../../source/foundations.rst:20
 msgid "The underlying principle"
@@ -81,7 +81,7 @@ msgid ""
 "On this page I will refer to \"guidance\", rather than to \"documentation\"."
 " Documentation is guidance in written form, and what I have to say here "
 "applies to all guidance for skill."
-msgstr "在本页中，我将使用 \"指导\" 这一说法，而不是文档。文档是书面形式的指导；这里要讲的内容，适用于一切针对于技能的指导。"
+msgstr "在本页中，我将使用 \"指导\" 这一说法，而不是文档。文档是书面形式的指导；这里要讲的内容，适用于一切面向技能的指导。"
 
 #: ../../source/foundations.rst:28
 msgid ""
@@ -127,11 +127,11 @@ msgstr "工具或产品的使用即是一门技艺。整个学科或专业皆是
 
 #: ../../source/foundations.rst:44
 msgid "Practical expression and conceptual grasp"
-msgstr "实际表达和概念把握"
+msgstr "实践表达与概念把握"
 
 #: ../../source/foundations.rst:46
 msgid "Two halves of the map, practical expression and conceptual grasp"
-msgstr "地图的两半：实践表达和概念掌握"
+msgstr "地图的两半：实践表达与概念把握"
 
 #: ../../source/foundations.rst:46
 msgid ""
@@ -141,7 +141,7 @@ msgstr "上方：实践表达、正确行动、执行、做事情 下方：真�
 
 #: ../../source/foundations.rst:46
 msgid "manual"
-msgstr "手册"
+msgstr "身体的"
 
 #: ../../source/foundations.rst:46
 msgid "correct action"
@@ -169,7 +169,7 @@ msgstr "认知"
 
 #: ../../source/foundations.rst:47
 msgid "**conceptual grasp**"
-msgstr "**概念掌握**"
+msgstr "**概念把握**"
 
 #: ../../source/foundations.rst:47
 msgid "conception"
@@ -177,7 +177,7 @@ msgstr "概念"
 
 #: ../../source/foundations.rst:47
 msgid "mental"
-msgstr "智力上的"
+msgstr "心智的"
 
 #: ../../source/foundations.rst:55
 msgid ""
@@ -209,15 +209,16 @@ msgid ""
 "It doesn't matter very much how we express the distinction between the two "
 "domains; there are multiple pairs of ideas that can do the work. Different "
 "ways of articulating it might fit better with a particular case."
-msgstr "至于如何表达这两个领域之间的区别，其实并不十分重要；能够承担这一任务的概念组合不止一种。针对具体情形，不同的表达方式可能更为贴切。"
+msgstr ""
+"至于如何表达这两个领域之间的区别，其实并不十分重要；能够承担这一任务的概念组合远不止一种。针对具体的情形，采用不同的表达方式也许会更为贴切。"
 
 #: ../../source/foundations.rst:65
 msgid "Development and application of skill"
-msgstr "开发和运用技能"
+msgstr "技能的开发和运用"
 
 #: ../../source/foundations.rst:67
 msgid "Two halves of the map, development and application of skill"
-msgstr "地图的两半，开发和运用技能"
+msgstr "地图的两半：技能的开发和运用"
 
 #: ../../source/foundations.rst:67
 msgid ""
@@ -235,7 +236,7 @@ msgstr "积累潜能"
 
 #: ../../source/foundations.rst:67
 msgid "**development of skill**"
-msgstr "**开发技能**"
+msgstr "**技能开发**"
 
 #: ../../source/foundations.rst:67
 msgid "becoming good at"
@@ -255,7 +256,7 @@ msgstr "发挥潜能"
 
 #: ../../source/foundations.rst:68
 msgid "**application of skill**"
-msgstr "**运用技能**"
+msgstr "**技能运用**"
 
 #: ../../source/foundations.rst:68
 msgid "being good at"
@@ -320,7 +321,7 @@ msgid ""
 "I've chosen labels that I hope have the most general application, but it "
 "should be possible to substitute any of the counterparts suggested above, or"
 " find others, and make as much sense."
-msgstr "我尽量选用了最具通用性的标签。不过，你完全可以用前面提到的任何一组对应概念来替换，或另找其他说法，效果同样成立。"
+msgstr "我尽量选用了最具通用性的标签。不过，你完全可以用前面提到的任何一组对应概念来替换，或另找其他说法，同样讲得通。"
 
 #: ../../source/foundations.rst:94 ../../source/foundations.rst:139
 msgid "The territory of craft as a two-dimensional map"
@@ -374,7 +375,7 @@ msgid ""
 "If these axes represent a good map of the territory of craft, then what can "
 "we say about the guidance or documentation that is appropriate to what we "
 "find in it?"
-msgstr "倘若这两条轴线能够很好地描绘技艺领域的地图，那么，对于其中呈现的内容，与之相配的指导或文档又该是怎样的？我们对此能说些什么？"
+msgstr "倘若这两条轴线能够很好地描绘技艺领域的地图，那么对于我们在其中所看到的，什么样的指导或文档才与之相称？我们对此能说些什么？"
 
 #: ../../source/foundations.rst:117
 msgid ""
@@ -388,7 +389,7 @@ msgstr ""
 
 #: ../../source/foundations.rst:121
 msgid "It's not even the kind of thing we should *want* to read off a map."
-msgstr "这甚至不是那种，我们本应 *想要* 从地图上直接读出的东西。"
+msgstr "这甚至不是我们该 *指望* 从地图上读出来的东西。"
 
 #: ../../source/foundations.rst:123
 msgid ""
@@ -399,8 +400,8 @@ msgid ""
 " axes of skill – so that's a little more than we get for the other axis, but"
 " it's still not very much."
 msgstr ""
-"就纵轴而言，我们能稍进一步，并且能够强烈而清晰地感受到，**指向性行动** 的指导适用于 **做事情**，而 *陈述事实* "
-"的指导，则更适合思考。我们一眼就能看出，它们必须采用怎样的形式，才能服务于技能中相应的轴线。这比另一条轴线给我们的信息稍多一些，但依然很有限。"
+"就纵轴而言，我们能稍进一步，并且能够强烈而清晰地感受到，**指导行动** 式的指导适用于 **做**，而 *陈述事实* "
+"式的指导，则更适合思考。我们一眼就能看出，它们必须采用怎样的形式，才能服务于技能中相应的轴线。这比另一条轴线给我们的信息稍多一些，但依然很有限。"
 
 #: ../../source/foundations.rst:125
 msgid ""
@@ -460,7 +461,7 @@ msgstr "在指导下的学习体验"
 
 #: ../../source/foundations.rst:148
 msgid "expert guidance and direction"
-msgstr "专家指导与引领"
+msgstr "专家的指导与指引"
 
 #: ../../source/foundations.rst:149
 msgid "reliable information"
@@ -496,27 +497,27 @@ msgstr "操作指南"
 
 #: ../../source/foundations.rst:164
 msgid "Reference"
-msgstr "参考内容"
+msgstr "参考"
 
 #: ../../source/foundations.rst:165
 msgid "Explanation"
-msgstr "解释说明"
+msgstr "解释"
 
 #: ../../source/foundations.rst:167
 msgid "Learning-oriented"
-msgstr "学习导向"
+msgstr "以学习为导向"
 
 #: ../../source/foundations.rst:168
 msgid "Goal-oriented"
-msgstr "目标导向"
+msgstr "以目标为导向"
 
 #: ../../source/foundations.rst:169
 msgid "Information-oriented"
-msgstr "信息导向"
+msgstr "以信息为导向"
 
 #: ../../source/foundations.rst:170
 msgid "Understanding-oriented"
-msgstr "理解导向"
+msgstr "以理解为导向"
 
 #: ../../source/foundations.rst:178
 msgid "Working with clusters of meaning"
@@ -536,8 +537,8 @@ msgid ""
 "the truth is that if it were not so hideous, \"actional expression\" would "
 "be more accurate than \"practical expression\"."
 msgstr ""
-"举例来说，Diátaxis 把“实践表达”当作技能的一个方面，与“概念把握”相对。然而，理论与概念本就属于实践的 "
-"*一部分*，并不与实践相排斥。真正与它们对应的，是 *行动*。说实话，要不是 *行动性表达* 这个词太拗口，它会比 *实践表达* 更准确。"
+"举例来说，Diátaxis 把“实践表达”当作技能的一个方面，与“概念把握”相对。然而，理论与概念本就是实践的 "
+"*一部分*，而非与实践相对立。真正与它们对应的，是 *行动*。说实话，要不是 *行动性表达* 这个词太拗口，它会比 *实践表达* 更准确。"
 
 #: ../../source/foundations.rst:184
 msgid ""
@@ -565,7 +566,7 @@ msgid ""
 "*application* of skill, *being at \"study\"* rather than *being at work* and"
 " so on."
 msgstr ""
-"*实践表达* 与 *概念把握*，*行动* 与 *理论*，*执行* 与 *思考* —— 它们并非严格相同的配对，但都将我们置于同一领域；类似地， 技能的 "
+"*实践表达* 与 *概念把握*，*行动* 与 *理论*，*做* 与 *思考* —— 它们并非严格相同的配对，但都将我们置于同一领域；类似地， 技能的 "
 "*开发* 与 *运用*，以及 *处于“学习”* 而非 *处于“工作”* 状态等，也是如此。"
 
 #: ../../source/foundations.rst:190
@@ -582,7 +583,7 @@ msgid ""
 "imaginative. They will find their own connections and anchors in them, and "
 "that is much more valuable than having precise terms for every idea."
 msgstr ""
-"这些意义集群以及其中的词语，或许存在语义上的细微差异，但它们的核心指向是明确的。人是有智慧、有想象力的，他们会从中找到自己的联系与立足点，而这远比为每个概念都规定一套精确术语，要有价值得多。"
+"这些意义集群以及其中的词语，或许存在语义上的细微差异，但它们的核心指向是明确的。人是有智慧、有想象力的，他们会从中找到自己的联系与锚点，而这远比为每个概念都规定一套精确术语，要有价值得多。"
 
 #: ../../source/foundations.rst:194
 msgid ""
