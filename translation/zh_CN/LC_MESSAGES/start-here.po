@@ -1,32 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) Daniele Procida
 # This file is distributed under the same license as the Diátaxis package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
 # Translators:
 # yms, 2026
 # evildmp <daniele@vurt.org>, 2026
 # Yufei Li <yufeiminds@gmail.com>, 2026
-# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Diátaxis\n"
+"Project-Id-Version:  Diátaxis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-04 23:10+0100\n"
+"POT-Creation-Date: 2026-10-14 23:51+0100\n"
 "PO-Revision-Date: 2026-07-06 20:18+0000\n"
 "Last-Translator: Yufei Li <yufeiminds@gmail.com>, 2026\n"
-"Language-Team: Chinese Simplified (https://app.transifex.com/danieleprocida/teams/120528/zh-Hans/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: zh-Hans\n"
+"Language: zh_Hans\n"
+"Language-Team: Chinese Simplified "
+"(https://app.transifex.com/danieleprocida/teams/120528/zh-Hans/)\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
-#: ../../source/start-here.rst-1
+#: ../../source/start-here.rst:-1
 msgid ""
-"The best way to get started with Diátaxis is by applying it to documentation"
-" problems."
+"The best way to get started with Diátaxis is by applying it to "
+"documentation problems."
 msgstr "Diátaxis 最好的入门方法，莫过于把它真正运用在文档问题上。"
 
 #: ../../source/start-here.rst:7
@@ -35,27 +36,27 @@ msgstr "从这里起步 —— 五分钟了解 Diátaxis"
 
 #: ../../source/start-here.rst:11
 msgid ""
-"Treat this website as a handbook or a toolbox that you make use of when you "
-"need it."
+"Treat this website as a handbook or a toolbox that you make use of when "
+"you need it."
 msgstr "不妨将本网站看作一本手册或一个工具箱，在你需要时使用。"
 
 #: ../../source/start-here.rst:13
 msgid ""
-"You don't need to read everything on this website to make sense of Diátaxis,"
-" or to start using it in practice. In fact I recommend that you don't. **The"
-" best way to get started with Diátaxis is by applying it** - to something, "
-"however small."
+"You don't need to read everything on this website to make sense of "
+"Diátaxis, or to start using it in practice. In fact I recommend that you "
+"don't. **The best way to get started with Diátaxis is by applying it** - "
+"to something, however small."
 msgstr ""
 "要想理解或在实践中使用 Diátaxis，不需要通读本网站上的所有内容。实际上，我劝你别这么做。**入门 Diátaxis "
 "的最佳方式，莫过于将其付诸实践**，运用于某件事物之上，无论其多么微小。"
 
 #: ../../source/start-here.rst:15
 msgid ""
-"Read this page for a brief primer. Each section contains links to more in-"
-"depth material; refer to that when you need it - when you're actually at "
-"work, or reflecting on the documentation problems you have encountered."
-msgstr ""
-"请先阅读本页以获取简要的入门指南。每一节都包含指向更深入材料的链接；您可以在需要时参考这些内容，无论是在实际工作当中，还是在反思所遇到的文档问题之时。"
+"Read this page for a brief primer. Each section contains links to more "
+"in-depth material; refer to that when you need it - when you're actually "
+"at work, or reflecting on the documentation problems you have "
+"encountered."
+msgstr "请先阅读本页以获取简要的入门指南。每一节都包含指向更深入材料的链接；您可以在需要时参考这些内容，无论是在实际工作当中，还是在反思所遇到的文档问题之时。"
 
 #: ../../source/start-here.rst:20
 msgid "The four kinds of documentation"
@@ -63,15 +64,16 @@ msgstr "文档的四种类型"
 
 #: ../../source/start-here.rst:22
 msgid ""
-"The core idea of Diátaxis is that there are fundamentally four identifiable "
-"kinds of documentation, that respond to four different needs. The four kinds"
-" are: *tutorials*, *how-to guides*, *reference* and *explanation*. Each has "
-"a different purpose, and needs to be written in a different way."
+"The core idea of Diátaxis is that there are fundamentally four "
+"identifiable kinds of documentation, that respond to four different "
+"needs. The four kinds are: *tutorials*, *how-to guides*, *reference* and "
+"*explanation*. Each has a different purpose, and needs to be written in a"
+" different way."
 msgstr ""
-"Diátaxis 的核心思想是：从根本上说，文档有四种泾渭分明的类型，分别满足四种不同的需求。这四种类型分别是：*教程*，*操作指南*，*参考* 和 "
-"*解释* 。每一种都有不同的用途，撰写方式也各有不同。"
+"Diátaxis 的核心思想是：从根本上说，文档有四种泾渭分明的类型，分别满足四种不同的需求。这四种类型分别是：*教程*，*操作指南*，*参考* "
+"和 *解释* 。每一种都有不同的用途，撰写方式也各有不同。"
 
-#: ../../source/start-here.rst:26 ../../source/snippets/diagram.rst:109
+#: ../../source/snippets/diagram.rst:109 ../../source/start-here.rst:26
 msgid "Tutorials"
 msgstr "教程"
 
@@ -81,8 +83,8 @@ msgstr ":ref:`教程的更多详情 <tutorials>`"
 
 #: ../../source/start-here.rst:31
 msgid ""
-":ref:`Why tutorials are completely different from how-to guides <tutorials-"
-"how-to>`"
+":ref:`Why tutorials are completely different from how-to guides "
+"<tutorials-how-to>`"
 msgstr ":ref:`为什么教程与操作指南截然不同 <tutorials-how-to>`"
 
 #: ../../source/start-here.rst:33
@@ -98,28 +100,29 @@ msgstr ""
 
 #: ../../source/start-here.rst:35
 msgid ""
-"A driving lesson is a good example of a tutorial. The purpose of the lesson "
-"is to develop skills and confidence in the student, not to get from A to B. "
-"A software example could be: *Let's create a simple game in Python*."
+"A driving lesson is a good example of a tutorial. The purpose of the "
+"lesson is to develop skills and confidence in the student, not to get "
+"from A to B. A software example could be: *Let's create a simple game in "
+"Python*."
 msgstr ""
-"驾驶课是教程的一个很好的例子。课程的目的在于培养学员的技能和信心，而非单纯地完成从甲地到乙地的行程。在软件领域，例子可以是：*让我们用 Python "
-"来创建一个简单的游戏*。"
+"驾驶课是教程的一个很好的例子。课程的目的在于培养学员的技能和信心，而非单纯地完成从甲地到乙地的行程。在软件领域，例子可以是：*让我们用 "
+"Python 来创建一个简单的游戏*。"
 
 #: ../../source/start-here.rst:37
 msgid ""
-"*The user will learn through what they do* - not because someone has tried "
-"to teach them."
+"*The user will learn through what they do* - not because someone has "
+"tried to teach them."
 msgstr "*用户是在干中学*，而不是因为有人试图向他们传授什么。"
 
 #: ../../source/start-here.rst:39
 msgid ""
-"In documentation, the special difficulty is that the instructor is condemned"
-" to be absent, and is not there to monitor the learner and correct their "
-"mistakes. The instructor must somehow find a way to be present through "
-"written instruction alone."
+"In documentation, the special difficulty is that the instructor is "
+"condemned to be absent, and is not there to monitor the learner and "
+"correct their mistakes. The instructor must somehow find a way to be "
+"present through written instruction alone."
 msgstr "在文档写作中，一个独特的难点在于：指导者注定缺席，无法亲临现场监督学习者并纠正错误，因此他必须想方设法，仅凭文字指导来达成“在场”的效果。"
 
-#: ../../source/start-here.rst:43 ../../source/snippets/diagram.rst:110
+#: ../../source/snippets/diagram.rst:110 ../../source/start-here.rst:43
 msgid "How-to guides"
 msgstr "操作指南"
 
@@ -134,25 +137,26 @@ msgid ""
 msgstr "**操作指南面向现实世界中的目标或问题**，为身处其境的用户提供切实可行的指引。"
 
 #: ../../source/start-here.rst:51
+#, fuzzy
 msgid ""
-"A how-to guide always addresses an already-competent user, who is expected "
-"to be able to use the guide to help them get their work done. In contrast to"
-" a tutorial, a how-to guide is concerned with the development of skill "
-"rather than its application – with *work* rather than *study*."
+"A how-to guide always addresses an already-competent user, who is "
+"expected to be able to use the guide to help them get their work done. In"
+" contrast to a tutorial, a how-to guide is concerned with the application"
+" of skill rather than its development – with *work* rather than *study*."
 msgstr ""
 "操作指南始终面向已经具备一定能力的用户，旨在帮助他们借助该指南完成工作。与教程不同，操作指南关注的是 *工作* 而非 "
 "*学习*，侧重于技能的开发而非运用。"
 
 #: ../../source/start-here.rst:53
 msgid ""
-"A how-to guide might be: *How to store cellulose nitrate film* (in motion "
-"picture photography) or *How to configure frame profiling* (in software). Or"
-" even: *Troubleshooting deployment problems*."
+"A how-to guide might be: *How to store cellulose nitrate film* (in motion"
+" picture photography) or *How to configure frame profiling* (in "
+"software). Or even: *Troubleshooting deployment problems*."
 msgstr ""
 "操作指南可能是：*如何储存硝酸纤维素胶片* \\ （在电影摄影中），或 *如何配置帧性能分析*\\ "
 "（在软件中），甚至还可以是：*部署问题的故障排除指南*。"
 
-#: ../../source/start-here.rst:57 ../../source/snippets/diagram.rst:111
+#: ../../source/snippets/diagram.rst:111 ../../source/start-here.rst:57
 msgid "Reference"
 msgstr "参考"
 
@@ -162,11 +166,11 @@ msgstr ":ref:`参考的更多详情 <reference>`"
 
 #: ../../source/start-here.rst:63
 msgid ""
-"**Reference guides contain the technical description** - facts - that a user"
-" needs in order to do things correctly: accurate, complete, reliable "
-"information, free of distraction and interpretation. They describe *what is "
-"the case*. They contain propositional or theoretical knowledge, not guides "
-"to action."
+"**Reference guides contain the technical description** - facts - that a "
+"user needs in order to do things correctly: accurate, complete, reliable "
+"information, free of distraction and interpretation. They describe *what "
+"is the case*. They contain propositional or theoretical knowledge, not "
+"guides to action."
 msgstr ""
 "**参考包含技术性描述**，也就是事实性的信息，供用户在执行操作时参考，以保证正确性：这些信息应准确、完整、可靠，不包含干扰性内容，不做主观阐释。它们描述的是"
 " *实际情况*，承载的是命题性或理论性知识，而非对行动的指导。"
@@ -174,28 +178,29 @@ msgstr ""
 #: ../../source/start-here.rst:65
 msgid ""
 "Like a how-to guide, reference documentation serves the user who is "
-"*applying skill*, and it's up to the user to be sufficiently competent to "
-"interpret and use it correctly."
+"*applying skill*, and it's up to the user to be sufficiently competent to"
+" interpret and use it correctly."
 msgstr "与操作指南类似，参考文档面向正在 *运用技能* 的用户，而能否正确解读和使用它，取决于用户自身是否具备足够的能力。"
 
 #: ../../source/start-here.rst:67
 msgid ""
-"*Reference material is neutral.* It is not concerned with what the user is "
-"doing. A marine chart could be used by a ship's navigator to plot a course, "
-"but equally well by an investigating judge."
+"*Reference material is neutral.* It is not concerned with what the user "
+"is doing. A marine chart could be used by a ship's navigator to plot a "
+"course, but equally well by an investigating judge."
 msgstr "*参考材料秉持中立*。它并不关心用户的具体操作。一张海图既可供船舶导航员规划航线，同样也可供调查法官使用。"
 
 #: ../../source/start-here.rst:69
 msgid ""
-"Where possible, the architecture of reference documentation should reflect "
-"the structure or architecture of the thing it's describing - just like a map"
-" does. If a method is part of a class that belongs to a certain module, then"
-" we should expect to see the same relationship in the documentation too."
+"Where possible, the architecture of reference documentation should "
+"reflect the structure or architecture of the thing it's describing - just"
+" like a map does. If a method is part of a class that belongs to a "
+"certain module, then we should expect to see the same relationship in the"
+" documentation too."
 msgstr ""
 "只要条件允许，参考文档的架构就应当映照它所描述对象的结构 —— "
 "正如地图映照大地。如果一个方法属于某个类、而这个类属于某个模块，那么在文档中也应该看到同样的隶属关系。"
 
-#: ../../source/start-here.rst:73 ../../source/snippets/diagram.rst:112
+#: ../../source/snippets/diagram.rst:112 ../../source/start-here.rst:73
 msgid "Explanation"
 msgstr "解释说明"
 
@@ -211,25 +216,23 @@ msgstr ":ref:`理解参考与解释之间的差异 <reference-explanation>`"
 
 #: ../../source/start-here.rst:81
 msgid ""
-"**Explanatory guides provide context and background.** They serve the need "
-"to understand and put things in a bigger picture. Explanation joins things "
-"together, and helps answer the question *why?*"
-msgstr ""
-"**解释性指南提供上下文与背景**，它满足的是理解的需要 —— 把事物放进更广阔的图景中看清全貌。解释将事物串联起来，帮助回答 *为什么？* 。"
+"**Explanatory guides provide context and background.** They serve the "
+"need to understand and put things in a bigger picture. Explanation joins "
+"things together, and helps answer the question *why?*"
+msgstr "**解释性指南提供上下文与背景**，它满足的是理解的需要 —— 把事物放进更广阔的图景中看清全貌。解释将事物串联起来，帮助回答 *为什么？* 。"
 
 #: ../../source/start-here.rst:83
 msgid ""
-"Explanation often needs to circle around its subject, and approach it from "
-"different directions. It can contain opinions and take perspectives."
+"Explanation often needs to circle around its subject, and approach it "
+"from different directions. It can contain opinions and take perspectives."
 msgstr "解释常常需要围绕主题展开，并从不同的方向加以切入。它不仅可以包含主观观点，还能引入多元的视角。"
 
 #: ../../source/start-here.rst:85
 msgid ""
-"Like reference, explanation belongs to the realm of propositional knowledge "
-"rather than action. However its purpose is to serve the user's study or "
-"development of skill - as tutorials do - and not their work."
-msgstr ""
-"与参考文档类似，解释同样归属于命题性知识的领域，而不是行动的范畴。不过，解释的目的在于满足用户的学习需要，或促进其技能的开发，而非面向他们的工作，这一点与教程相似。"
+"Like reference, explanation belongs to the realm of propositional "
+"knowledge rather than action. However its purpose is to serve the user's "
+"study or development of skill - as tutorials do - and not their work."
+msgstr "与参考文档类似，解释同样归属于命题性知识的领域，而不是行动的范畴。不过，解释的目的在于满足用户的学习需要，或促进其技能的开发，而非面向他们的工作，这一点与教程相似。"
 
 #: ../../source/start-here.rst:87
 msgid ""
@@ -237,11 +240,11 @@ msgid ""
 "*know* things overload their tutorials with distracting and unhelpful "
 "explanation. It would be much more useful to give the learner the most "
 "minimal explanation (\"Here, we use HTTPS because it's safer\") and then "
-"link to an in-depth article (*Secure communication using HTTPS encryption*) "
-"for when the user is ready for it."
+"link to an in-depth article (*Secure communication using HTTPS "
+"encryption*) for when the user is ready for it."
 msgstr ""
-"常见的情况是，教程作者总担心学生\"该知道的没学到\"，于是在教程中堆砌大量令人分心且无用的解释。更可取的做法是，先给学习者最精简的解释（“这里使用 "
-"HTTPS，因为它更安全”），再链接到一篇深度文章（*使用 HTTPS 加密实现安全通信*），等学习者准备好深入探究时再去阅读。"
+"常见的情况是，教程作者总担心学生\"该知道的没学到\"，于是在教程中堆砌大量令人分心且无用的解释。更可取的做法是，先给学习者最精简的解释（“这里使用"
+" HTTPS，因为它更安全”），再链接到一篇深度文章（*使用 HTTPS 加密实现安全通信*），等学习者准备好深入探究时再去阅读。"
 
 #: ../../source/start-here.rst:93
 msgid "The Diátaxis map"
@@ -249,8 +252,8 @@ msgstr "Diátaxis 地图"
 
 #: ../../source/start-here.rst:95
 msgid ""
-"The four kinds of documentation and the relationships between them can be "
-"summarised in the Diátaxis map."
+"The four kinds of documentation and the relationships between them can be"
+" summarised in the Diátaxis map."
 msgstr "Diátaxis 地图概括了四种文档类型及其彼此之间的关系。"
 
 #: ../../source/start-here.rst:99
@@ -266,8 +269,8 @@ msgstr "Diátaxis 并非只是四种事物的简单罗列，而是对它们进�
 
 #: ../../source/start-here.rst:103
 msgid ""
-"Crossing or blurring the boundaries described in the map is at the heart of "
-"a vast number of problems in documentation."
+"Crossing or blurring the boundaries described in the map is at the heart "
+"of a vast number of problems in documentation."
 msgstr "文档中数不胜数的问题，其核心就在于跨越或模糊了地图所描述的界限。"
 
 #: ../../source/snippets/diagram.rst:109
@@ -276,16 +279,15 @@ msgstr "Diátaxis 文档类型地图"
 
 #: ../../source/snippets/diagram.rst:109
 msgid ""
-"The map is defined by two axes that divide it into four quadrants. Above and"
-" below, documentation that directs actions versus documentation that "
+"The map is defined by two axes that divide it into four quadrants. Above "
+"and below, documentation that directs actions versus documentation that "
 "describes what is the case. Left and right, documentation that serves "
-"development of skill versus documentation that serves application of skill. "
-"This gives us four kinds of documentation. Top left: learning-oriented "
-"tutorials. Top right: goal-oriented how-to guides. Bottom right: "
-"information-oriented reference. Bottom left: understanding-oriented "
+"development of skill versus documentation that serves application of "
+"skill. This gives us four kinds of documentation. Top left: learning-"
+"oriented tutorials. Top right: goal-oriented how-to guides. Bottom right:"
+" information-oriented reference. Bottom left: understanding-oriented "
 "explanation."
-msgstr ""
-"这张地图以两条轴线为基准，划分成四个象限。纵向来看，代表了指导行动与陈述事实的文档之间的区别；横向来看，则是面向技能开发和技能运用的文档之间的区别。由此得出四种文档类型：左上为面向学习导向的教程，右上为目标导向的操作指南，右下为信息导向的参考，左下为理解导向的解释。"
+msgstr "这张地图以两条轴线为基准，划分成四个象限。纵向来看，代表了指导行动与陈述事实的文档之间的区别；横向来看，则是面向技能开发和技能运用的文档之间的区别。由此得出四种文档类型：左上为面向学习导向的教程，右上为目标导向的操作指南，右下为信息导向的参考，左下为理解导向的解释。"
 
 #: ../../source/snippets/diagram.rst:114
 msgid "Learning-oriented"
@@ -357,9 +359,9 @@ msgstr "操作指南和参考面向 *工作*\\ （也就是用户的技能 **运
 
 #: ../../source/start-here.rst:123
 msgid ""
-"But a map doesn't tell you what to *do* - it's reference. To guide *your* "
-"action you need a different sort of tool, in this case, a kind of Diátaxis "
-"compass."
+"But a map doesn't tell you what to *do* - it's reference. To guide *your*"
+" action you need a different sort of tool, in this case, a kind of "
+"Diátaxis compass."
 msgstr "然而，地图并不会告诉你该 *做* 什么，它属于参考。若要指引你如何行动，则需要另一类工具，在这里，便是 Diátaxis 指南针。"
 
 #: ../../source/start-here.rst:127
@@ -372,14 +374,14 @@ msgstr "指南针有两种不同的用途。"
 
 #: ../../source/start-here.rst:131
 msgid ""
-"When creating documentation, it helps clarify your own intentions, and helps"
-" make sure you're actually doing what you think you're doing."
+"When creating documentation, it helps clarify your own intentions, and "
+"helps make sure you're actually doing what you think you're doing."
 msgstr "在创建文档时，它有助于厘清你自己的意图，并确保你的实际做法与初衷相符"
 
 #: ../../source/start-here.rst:133
 msgid ""
-"When looking at documentation, it helps understand what's going on in it, "
-"and makes problems stand out."
+"When looking at documentation, it helps understand what's going on in it,"
+" and makes problems stand out."
 msgstr "而在检视已有文档时，它能帮你看清文档里正在发生什么，让问题无所遁形。"
 
 #: ../../source/start-here.rst:135
@@ -447,8 +449,8 @@ msgstr ":ref:`how-to-use-diataxis`"
 
 #: ../../source/start-here.rst:151
 msgid ""
-"Consider what you see in the documentation, in front of you right now (which"
-" might be literally nothing, if you haven't started yet)."
+"Consider what you see in the documentation, in front of you right now "
+"(which might be literally nothing, if you haven't started yet)."
 msgstr "不妨想一想，你眼前这份文档中呈现的是什么（如果你尚未开始，那里也许空无一字）。"
 
 #: ../../source/start-here.rst:153
@@ -479,9 +481,9 @@ msgstr "随你怎么用"
 
 #: ../../source/start-here.rst:169
 msgid ""
-"You can do what you like with Diátaxis. You don't have to believe in it and "
-"there is no exam. It is a wholly pragmatic approach. I think it's *true*, "
-"but what matters is that it actually helps people create better "
+"You can do what you like with Diátaxis. You don't have to believe in it "
+"and there is no exam. It is a wholly pragmatic approach. I think it's "
+"*true*, but what matters is that it actually helps people create better "
 "documentation. If you find one idea or insight in it that seems to be "
 "worthwhile, help yourself to that."
 msgstr ""
@@ -491,18 +493,17 @@ msgstr ""
 #: ../../source/start-here.rst:171
 msgid ""
 "There is an extensively elaborated theory around Diátaxis, but you don't "
-"need to subscribe to it, or even read about it. Diátaxis doesn't require a "
-"commitment to pursue it to a final end."
+"need to subscribe to it, or even read about it. Diátaxis doesn't require "
+"a commitment to pursue it to a final end."
 msgstr "围绕着 Diátaxis 有一整套详尽阐述的理论，但你不必认同它，甚至不必去读它。Diátaxis 从不要求谁承诺一路走到终点。"
 
 #: ../../source/start-here.rst:173
 msgid ""
-"You can do just one thing, right now, and even if you do nothing else ever "
-"after, you will at least have made that one improvement. (In practice what "
-"you will find is that each thing you do will give you a clue as to the next "
-"thing to do - you only need to keep doing them.)"
-msgstr ""
-"你现在只需做一件事，哪怕此后再无作为，你至少已经实现了那一点改进（实际上你会发现，你所做的每一件事都会为下一件事提供线索 —— 你只需坚持下去）。"
+"You can do just one thing, right now, and even if you do nothing else "
+"ever after, you will at least have made that one improvement. (In "
+"practice what you will find is that each thing you do will give you a "
+"clue as to the next thing to do - you only need to keep doing them.)"
+msgstr "你现在只需做一件事，哪怕此后再无作为，你至少已经实现了那一点改进（实际上你会发现，你所做的每一件事都会为下一件事提供线索 —— 你只需坚持下去）。"
 
 #: ../../source/start-here.rst:177
 msgid "Get started"
@@ -516,9 +517,10 @@ msgstr "读到这里，你已经掌握了开始上手 Diátaxis 所需的一切�
 
 #: ../../source/start-here.rst:181
 msgid ""
-"You can read more if you want, and eventually you probably should, but *you "
-"will get the most value from the guidance in this website when you turn to "
-"it with a problem or a question*. That's when it comes alive."
+"You can read more if you want, and eventually you probably should, but "
+"*you will get the most value from the guidance in this website when you "
+"turn to it with a problem or a question*. That's when it comes alive."
 msgstr ""
-"想多读一些，当然可以；读到最后，你多半也确实该多读一些。但 *只有当你带着一个具体的问题或疑问来查阅本网站时，其中的指引才能发挥最大的价值* —— "
-"也正是在那个时候，这些指引才真正鲜活起来。"
+"想多读一些，当然可以；读到最后，你多半也确实该多读一些。但 *只有当你带着一个具体的问题或疑问来查阅本网站时，其中的指引才能发挥最大的价值* ——"
+" 也正是在那个时候，这些指引才真正鲜活起来。"
+
