@@ -1,12 +1,13 @@
 cjkspace — CJK inline spacing for Sphinx
 =========================================
 
-Remove the spaces that inline markup needs but Chinese, Japanese and Korean
-typography does not.
+Remove the spaces that inline markup needs but Chinese and Japanese
+typography does not. Korean is left alone: it separates words with spaces,
+so the same spaces are real there.
 
-Enable the extension once and inline markup embedded in CJK prose renders
-without the artificial gaps around it. There is nothing to configure, and it
-is safe to leave on for every language and every builder.
+Enable the extension once and inline markup embedded in Chinese or Japanese
+prose renders without the artificial gaps around it. There is nothing to
+configure, and it is safe to leave on for every language and every builder.
 
 The problem
 -----------
@@ -22,9 +23,10 @@ The workaround is to pad the markup with spaces::
 
     中文 *强调* 中文        →  <p>中文 <em>强调</em> 中文</p>
 
-That parses — but the spaces now show on the page, and CJK typography puts no
-spaces between its characters. The gaps are artefacts of the markup
-workaround, not part of the prose.
+That parses — but the spaces now show on the page, and Chinese and Japanese
+typography put no spaces between characters. The gaps are artefacts of the
+markup workaround, not part of the prose. (Korean is different: it separates
+words with spaces, so there the gap is correct and the extension keeps it.)
 
 Translations hit the same problem in a less obvious way. Sphinx re-parses
 every translated message (``msgstr``) with the reStructuredText parser, so a
@@ -43,7 +45,9 @@ What this extension does
 
 After a document has been parsed and translated, the extension deletes the
 artificial whitespace at the seam between text and inline markup — but only
-when the characters on **both** sides of that whitespace are CJK::
+when the characters on **both** sides of that whitespace belong to a script
+written without word spaces (Chinese and Japanese; see `What counts as
+unspaced text`_)::
 
     即它 *为什么* 有效，而不是如何运作。
     ↓
@@ -83,8 +87,9 @@ What gets fixed
 The rule is always the same. At a seam between a text node and an adjacent
 inline element, the whitespace is removed when:
 
-* the text-side character next to the whitespace is CJK, **and**
-* the first (or last) character rendered by the inline element is CJK.
+* the text-side character next to the whitespace is written without word
+  spaces (Chinese or Japanese), **and**
+* the first (or last) character rendered by the inline element is too.
 
 .. list-table::
    :header-rows: 1
@@ -94,11 +99,15 @@ inline element, the whitespace is removed when:
      - Source (or ``msgstr``)
      - Renders before
      - Renders after
-   * - Emphasis with CJK on both sides
+   * - Emphasis in Chinese
      - ``即它 *为什么* 有效。``
      - ``即它 <em>为什么</em> 有效。``
      - ``即它<em>为什么</em>有效。``
-   * - Strong emphasis with CJK on both sides
+   * - Emphasis in Japanese
+     - ``これは *重要* です。``
+     - ``これは <em>重要</em> です。``
+     - ``これは<em>重要</em>です。``
+   * - Strong emphasis in Chinese
      - ``都兼具 **实践表达** 与 **概念把握**。``
      - ``都兼具 <strong>实践表达</strong> 与 <strong>概念把握</strong>。``
      - ``都兼具<strong>实践表达</strong>与<strong>概念把握</strong>。``
@@ -162,7 +171,8 @@ double-backtick markup) and to roles that produce inline markup, such as
     这是<code>内嵌代码</code>示例。
 
 **Markup at the start of a wrapped source line.** A newline before the markup
-counts as whitespace and is removed between CJK characters (the same joining
+counts as whitespace and is removed between Chinese or Japanese characters
+(the same joining
 that ``sphinx-cjkspace`` does).
 
 .. code-block:: text
@@ -225,15 +235,19 @@ What is left untouched
 ----------------------
 
 Some spaces are intentional. The extension only acts when **both** sides of
-the whitespace are CJK, so all of the following keep their spacing.
+the whitespace are written without word spaces, so all of the following keep
+their spacing.
 
+* **Korean** — Hangul separates words with spaces, so the spaces around
+  ``*동안*`` in ``요리를 하는 *동안* 읽는 책`` are real word boundaries and
+  stay. The same applies to Korean emphases containing Latin text.
 * **English and other Latin-script prose** — ``It works *well* today.``
 * **The space between CJK and Latin text** — this spacing is desirable, e.g.
   ``中文 *English* 中文`` and ``配置 :code:`Python` 的环境``.
 * **Wide emoji** — emoji are symbols rather than text: ``句子 😀 *强调* 😀
   结尾`` keeps its spaces.
-* **European accented letters** — ``é``, ``α`` and other ambiguous-width
-  letters are not CJK: ``Déjà *强调* déjà`` keeps its spaces.
+* **European accented letters** — ``é``, ``α`` and other non-CJK letters:
+  ``Déjà *强调* déjà`` keeps its spaces.
 * **Literal content** — ``.. code-block::``, ``.. parsed-literal::``, doctest
   blocks and other literal blocks, where whitespace is significant.
 * **Plain text without adjacent markup** — the extension edits seams around
@@ -243,31 +257,34 @@ the whitespace are CJK, so all of the following keep their spacing.
   only the space before the dash (the markup seam) is removed; the space
   after ``——`` belongs to the prose and stays.
 
-What counts as CJK
-------------------
+What counts as unspaced text
+----------------------------
 
-A character counts as CJK when it is written wide in CJK text:
+The extension asks a typographic question, not a geographic one: does the
+script put spaces between words? Two families do not, and they are what the
+extension recognises:
 
-* letters, digits and punctuation of East Asian Width *Wide* or *Fullwidth* —
-  ideographs, kana, hangul, ``。``, ``、``, ``「」``, ``（）``, ``！``, ``：``,
-  fullwidth digits and so on;
-* punctuation of *Ambiguous* width that CJK typography uses as its own —
-  the em dash ``——``, the ellipsis ``……``, curly quotes ``“”``, the middle
-  dot ``·``.
+* **Han** — Chinese characters, including the kanji of Japanese —
+  ``中``, ``日``, ``漢``;
+* **Japanese kana** — hiragana and katakana — ``あ``, ``ア``, ``ｶ``;
+* **Bopomofo** — ``ㄅ``;
+* **Their punctuation** — ``。``, ``、``, ``「」``, ``（）``, ``！``, ``：``,
+  fullwidth forms, and the ambiguous-width marks those scripts use
+  (``——``, ``……``, ``“”``, ``·``).
 
-It does **not** count as CJK:
-
-* wide symbols and emoji (``😀``), where a space reads fine;
-* ambiguous-width *letters* (``é``, ``α``, ``Ж``), so European prose is never
-  affected;
-* halfwidth forms.
+Hangul is **not** included: ``한``, ``글`` and the jamo are written with
+spaces between words, so a space next to them is real. Also excluded are
+Latin and other alphabets (``A``, ``é``, ``α``, ``Ж``), wide emoji (``😀``)
+and symbols (``→``, ``©``); halfwidth katakana is included as Japanese.
 
 Scope and limitations
 ---------------------
 
+* **Korean is untouched by design.** Word spacing is part of Korean
+  orthography, so removing it would change the meaning of the sentence.
 * **Only markup seams are cleaned.** Spaces that come from wrapping plain
-  source lines between CJK characters, with no inline markup involved, are
-  not touched — that is what `sphinx-cjkspace
+  source lines between Chinese or Japanese characters, with no inline markup
+  involved, are not touched — that is what `sphinx-cjkspace
   <https://github.com/seisman/sphinx-cjkspace>`__ does. The two extensions can
   be used together.
 * **Unparseable markup is out of scope.** If the source has no spaces at all
@@ -284,7 +301,8 @@ The extension never touches parsing, sources or catalogs. It post-processes
 the document tree twice: at ``doctree-read`` (before the toctree collector
 snapshots section titles for the navigation) and at ``doctree-resolved`` (the
 last stage before writing). At each seam between a text node and an inline
-element it removes the whitespace run when both flanking characters are CJK.
+element it removes the whitespace run when both flanking characters are
+written without word spaces.
 Both passes are idempotent, and the ``gettext`` builder is skipped.
 
 Running the tests

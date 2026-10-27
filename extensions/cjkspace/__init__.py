@@ -18,8 +18,10 @@ gaps between CJK text and the emphasised span::
 
     即它 <em>为什么</em> 有效
 
-CJK typography puts no space between CJK characters, so the spaces are
-artifacts of the markup workaround, not of the prose.
+Chinese and Japanese typography put no space between characters, so the
+spaces there are artefacts of the markup workaround, not of the prose.
+Korean is the exception: it separates words with spaces, so the same
+spaces are real and the extension leaves them alone (see below).
 
 The fix (after https://github.com/seisman/sphinx-cjkspace)
 ----------------------------------------------------------
@@ -32,25 +34,26 @@ catalogs are never touched.
 
 A whitespace run at the seam between a ``Text`` node and a neighbouring
 inline element (emphasis, strong, literal, reference, ...) is dropped when
-both characters flanking it are CJK:
+both characters flanking it belong to a script written without word
+spaces:
 
 * the last (or first) character of the ``Text`` node, and
 * the first (or last) character rendered by the neighbouring element.
 
-CJK here means a character of East Asian Width ``W`` or ``F`` that is a
-letter, digit or punctuation mark — ideographs, kana, hangul, CJK
-punctuation (。、「」) and fullwidth forms (！：) — plus punctuation of
-Ambiguous East Asian Width that CJK typography uses as its own: the em
-dash (——), the ellipsis (……), curly quotes (“”), the middle dot (·).
-Wide symbols/emoji do not qualify (a space reads fine there), and neither
-do ambiguous-width letters, so European prose — French é, Greek α — is
-untouched.
+That is not "CJK" as a whole.  Chinese and Japanese run their characters
+together, so a space around markup there is an artefact of the parsing
+workaround; Korean separates words with spaces, so the same space is a
+real word boundary and must stay.  Hangul is therefore excluded.  The
+unspaced set is Han (Chinese and Japanese kanji), hiragana, katakana,
+bopomofo and the punctuation those scripts share (。、「」——……“”), and it
+is spelled out as Unicode blocks below so a reader can check exactly what
+qualifies.  Latin, wide emoji and other scripts do not qualify, which also
+keeps the (desirable) space between CJK and Latin text, and leaves prose
+in other languages untouched.
 
-Because removal only ever triggers between two CJK characters, prose in
-other languages is untouched, and the (desirable) space between CJK and
-Latin text is kept.  Newline-wrapped source counts as whitespace too, so
-markup at the start of a continuation line is glued as well, mirroring
-sphinx-cjkspace's line joining.
+Newline-wrapped source counts as whitespace too, so markup at the start
+of a continuation line is glued as well, mirroring sphinx-cjkspace's line
+joining.
 
 The ``gettext`` builder is skipped, so ``.pot`` msgids stay verbatim for
 translators; ``literal_block`` (which includes parsed literals) and
@@ -60,21 +63,43 @@ translators; ``literal_block`` (which includes parsed literals) and
 from __future__ import annotations
 
 import re
-import unicodedata
 
 from docutils import nodes
 
 __version__ = "0.1.0"
 
-# East Asian Width values of characters treated as CJK text: Wide and
-# Fullwidth. Halfwidth forms do not qualify.
-_CJK_WIDTHS = frozenset("WF")
+# Unicode blocks of scripts written without spaces between characters.
+# Hangul is deliberately absent: Korean separates words with spaces, so a
+# space next to Hangul is a real word boundary and must be kept. A missing
+# block here can only leave a space in place — never remove a needed one.
+_UNSPACED_BLOCKS = (
+    (0x2E80, 0x2EFF),    # CJK Radicals Supplement
+    (0x2F00, 0x2FDF),    # Kangxi Radicals
+    (0x2FF0, 0x2FFF),    # Ideographic Description Characters
+    (0x3000, 0x303F),    # CJK Symbols and Punctuation
+    (0x3040, 0x309F),    # Hiragana
+    (0x30A0, 0x30FF),    # Katakana
+    (0x3100, 0x312F),    # Bopomofo
+    (0x3190, 0x31BF),    # Kanbun, Bopomofo Extended
+    (0x31C0, 0x31EF),    # CJK Strokes
+    (0x31F0, 0x31FF),    # Katakana Phonetic Extensions
+    (0x3400, 0x4DBF),    # CJK Unified Ideographs Extension A
+    (0x4E00, 0x9FFF),    # CJK Unified Ideographs
+    (0xF900, 0xFAFF),    # CJK Compatibility Ideographs
+    (0xFE10, 0xFE1F),    # Vertical Forms
+    (0xFE30, 0xFE4F),    # CJK Compatibility Forms
+    (0xFE50, 0xFE6F),    # Small Form Variants
+    (0xFF01, 0xFF60),    # Fullwidth Forms
+    (0xFF61, 0xFF9F),    # Halfwidth CJK punctuation and katakana
+    (0xFFE0, 0xFFE6),    # Fullwidth Signs
+    (0x1B000, 0x1B16F),  # Kana Supplement, Kana Extended-A, Small Kana Ext.
+    (0x20000, 0x2FA1F),  # CJK Extensions B-F, Compatibility Supplement
+    (0x30000, 0x323AF),  # CJK Extensions G-H
+)
 
-# Category prefixes (first letter of unicodedata.category) of characters
-# that count as CJK text: letters (ideographs, kana, hangul), numbers and
-# punctuation (。、「」！). Excludes symbols/emoji (S*) — a wide emoji is
-# regularly followed by a space that reads fine — and marks (M*).
-_CJK_CATEGORIES = frozenset("LNP")
+# Punctuation shared by those scripts but living outside the blocks above:
+# ambiguous-width dashes, ellipses and quotation marks.
+_UNSPACED_PUNCTUATION = frozenset("—–―…‥“”‘’·")
 
 # Whitespace runs at a Text node's seams. \s matches the fullwidth space
 # U+3000 as well as newlines, so a source line wrapped right before
@@ -90,33 +115,25 @@ _TRAILING_WS = re.compile(r"(?:\x00?\s)+$")
 _PRESERVE_PARENTS = (nodes.literal_block, nodes.math_block)
 
 
-def is_cjk_char(char: str) -> bool:
-    """True if *char* is a CJK character that forbids an adjacent space.
+def is_unspaced_char(char: str) -> bool:
+    """True if *char* belongs to a script written without word spaces.
 
-    CJK ideographs, kana and hangul, CJK punctuation (。、) and fullwidth
-    forms (！：) qualify. So does punctuation of Ambiguous East Asian Width
-    that Chinese/Japanese typography uses as CJK punctuation — the em dash
-    (——), the ellipsis (……), curly quotes (“”), the middle dot (·).
-    ASCII/Latin, ambiguous-width *letters* (é, α — European prose keeps
-    its spaces), and wide symbols/emoji do not.
+    Han (Chinese and Japanese kanji), hiragana, katakana, bopomofo and the
+    punctuation those scripts share qualify. Hangul does not — Korean
+    separates words with spaces — and neither do Latin, emoji or other
+    scripts.
 
-    >>> is_cjk_char("中")
+    >>> is_unspaced_char("中") or is_unspaced_char("あ") or is_unspaced_char("。")
     True
-    >>> is_cjk_char("。") or is_cjk_char("—") or is_cjk_char("…")
-    True
-    >>> is_cjk_char("A") or is_cjk_char("é") or is_cjk_char("😀")
+    >>> is_unspaced_char("한") or is_unspaced_char("A") or is_unspaced_char("😀")
     False
     """
-    if not char:
+    if not char or char.isspace():
         return False
-    category = unicodedata.category(char)
-    width = unicodedata.east_asian_width(char)
-    if width in _CJK_WIDTHS:
-        return category[0] in _CJK_CATEGORIES
-    # Ambiguous-width punctuation: —— …… “” · are written without spaces
-    # in CJK text (and a space next to them is often the markup workaround
-    # too). Ambiguous-width letters stay non-CJK so European prose is safe.
-    return width == "A" and category[0] == "P"
+    if char in _UNSPACED_PUNCTUATION:
+        return True
+    codepoint = ord(char)
+    return any(start <= codepoint <= end for start, end in _UNSPACED_BLOCKS)
 
 
 def _edge_char(node: nodes.Element, *, last: bool) -> str:
@@ -148,7 +165,7 @@ def _strip_trailing(parent: nodes.Element, index: int) -> bool:
     """Drop Text node *index*'s trailing whitespace run.
 
     Fires when the character before the run in the Text node and the
-    first character of the element following it are both CJK.
+    first character of the element following it are both unspaced.
     """
     raw = str(parent.children[index])
     match = _TRAILING_WS.search(raw)
@@ -157,8 +174,8 @@ def _strip_trailing(parent: nodes.Element, index: int) -> bool:
         # by _strip_inner_space)
         return False
     if not (
-        is_cjk_char(raw[match.start() - 1])
-        and is_cjk_char(_edge_char(parent.children[index + 1], last=False))
+        is_unspaced_char(raw[match.start() - 1])
+        and is_unspaced_char(_edge_char(parent.children[index + 1], last=False))
     ):
         return False
     return _replace_text(parent, index, raw[: match.start()])
@@ -168,7 +185,7 @@ def _strip_leading(parent: nodes.Element, index: int) -> bool:
     """Drop Text node *index*'s leading whitespace run.
 
     Fires when the character after the run in the Text node and the last
-    character of the element preceding it are both CJK.
+    character of the element preceding it are both unspaced.
     """
     raw = str(parent.children[index])
     match = _LEADING_WS.match(raw)
@@ -176,8 +193,8 @@ def _strip_leading(parent: nodes.Element, index: int) -> bool:
         return False
     rest = raw[match.end() :]
     if not (
-        is_cjk_char(rest[0])
-        and is_cjk_char(_edge_char(parent.children[index - 1], last=True))
+        is_unspaced_char(rest[0])
+        and is_unspaced_char(_edge_char(parent.children[index - 1], last=True))
     ):
         return False
     return _replace_text(parent, index, rest)
@@ -188,7 +205,7 @@ def _strip_inner_space(parent: nodes.Element) -> None:
 
     ``*甲* *乙*`` needs the middle space to parse, yet renders as
     ``甲乙``: the space is artificial too. Only fires when both elements
-    render CJK at the seam.
+    render unspaced text at the seam.
     """
     children = parent.children
     for i in range(1, len(children) - 1):
@@ -198,14 +215,14 @@ def _strip_inner_space(parent: nodes.Element) -> None:
         left, right = children[i - 1], children[i + 1]
         if isinstance(left, nodes.Text) or isinstance(right, nodes.Text):
             continue
-        left_cjk = is_cjk_char(_edge_char(left, last=True))
-        right_cjk = is_cjk_char(_edge_char(right, last=False))
-        if left_cjk and right_cjk:
+        left_unspaced = is_unspaced_char(_edge_char(left, last=True))
+        right_unspaced = is_unspaced_char(_edge_char(right, last=False))
+        if left_unspaced and right_unspaced:
             _replace_text(parent, i, "")
 
 
 def fix_inline_boundaries(parent: nodes.Element) -> None:
-    """Strip artificial CJK-boundary spaces among one element's children.
+    """Strip artificial unspaced-script boundary spaces among children.
 
     Only seams between a Text node and a neighbouring element are
     considered; Text↔Text siblings (which do not occur in parsed
@@ -226,7 +243,7 @@ def fix_inline_boundaries(parent: nodes.Element) -> None:
 
 
 def process_cjk_boundaries(app, doctree, docname=None):
-    """Strip artificial CJK-boundary spaces from one document tree.
+    """Strip artificial unspaced-script boundary spaces from a tree.
 
     Connected to two events:
 

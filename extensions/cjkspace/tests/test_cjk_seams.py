@@ -60,6 +60,37 @@ def test_space_after_cjk_full_stop_before_opener(build_html):
     assert "英文。<strong>粗体</strong>结尾。" in html
 
 
+def test_japanese_kana_seams_are_glued(build_html):
+    # Japanese, like Chinese, runs its characters together.
+    out = build_html("ようこそ\n========\n\nこれは *重要* です。\n")
+    html = _page(out)
+    assert "これは<em>重要</em>です。" in html
+
+
+def test_japanese_punctuation_seam_is_glued(build_html):
+    out = build_html("ようこそ\n========\n\nこれは終わり。 *重要* です。\n")
+    html = _page(out)
+    assert "これは終わり。<em>重要</em>です。" in html
+
+
+def test_korean_word_spacing_is_kept(build_html):
+    # Korean separates words with spaces: the spaces around *동안* are real
+    # word boundaries, not markup padding (review comment on PR #174).
+    out = build_html(
+        "환영\n=====\n\n요리를 하는 *동안* 읽는 책이 아닙니다.\n"
+    )
+    html = _page(out)
+    assert "요리를 하는 <em>동안</em> 읽는 책이 아닙니다." in html
+
+
+def test_korean_spacing_between_marks_is_kept(build_html):
+    out = build_html(
+        "환영\n=====\n\n사용자의 *행동* 과 관련이 있습니다.\n"
+    )
+    html = _page(out)
+    assert "사용자의 <em>행동</em> 과 관련이 있습니다." in html
+
+
 def test_space_before_fullwidth_open_paren(build_html):
     # A fullwidth opening paren after the closing delimiter also forces a
     # space to parse; it must not survive rendering. (There is no markup
